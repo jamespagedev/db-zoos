@@ -18,7 +18,10 @@ server.get('/', (req, res) => {
 });
 
 const zoosRouter = require('./routes/zoosRouter.js');
+const bearsRouter = require('./routes/bearsRouter.js');
+
 server.use('/api/zoos', zoosRouter);
+server.use('/api/bears', bearsRouter);
 
 /***************************************************************************************************
  ********************************************* export(s) *******************************************
